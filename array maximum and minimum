@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+int MX=-1e8;
+int MN=1e8;
+
+int MAX(int a,int b)
+{
+  if(a>b) return a;
+  return b;
+}
+int MIN(int a,int b)
+{
+  if(a<b) return a;
+  return b;
+}
+
+int find_max(int n, int arr[])
+{
+   for(int  i=0;i<n;++i){
+      MX=MAX(MX,arr[i]);
+   }
+   return MX;
+}
+
+int find_min(int n, int arr[])
+{
+   for(int  i=0;i<n;++i){
+      MN=MIN(MN,arr[i]);
+   } 
+   return MN;
+}
+
+int main()
+{
+  int n;
+  cin >> n;
+  int arr[n+20];
+  for(int i=0;i<n;++i){
+    cin >> arr[i];
+  }
+  cout << "maximum: " << find_max(n,arr) << "\n" << "minimum: "<< find_min(n,arr) << endl;
+}
