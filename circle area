@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+float area(float a, float b)
+{
+   if(a>b)  return 3.1415*a*a;
+   return 3.1415*b*b;
+}
+int main()
+{
+  float n,m;
+  cin >> n >> m;
+  cout << area(n,m) << endl;
+}
