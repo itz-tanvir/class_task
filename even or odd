@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+bool is_even(int a)
+{
+  if(a%2==0) return true;
+  return false;
+}
+int main()
+{
+  int n;
+  cin >> n;
+  cout << is_even(n) << endl;
+}
